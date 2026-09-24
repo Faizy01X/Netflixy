@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-size: max(1000px, 100vw);
+    background-repeat: no-repeat;
+    height: 600px;
+    /* width: 100%; */
+    position: relative;
+
+}
+
+.main .box {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.69;
+}
+
+nav {
+    display: flex;
+    max-width: 75vw;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 25px;
+
+
+
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.navBtn {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+
+
+}
+
+.langBtn {
+    padding: 0 8px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(248, 243, 243, 0.219);
+    border: 0.5px solid black;
+
+}
+
+
+.logBtn {
+    padding: 0 14px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgb(235, 31, 31);
+    border: 0.5px solid black;
+    font-weight: 700;
+}
+
+.heading {
+    padding-top: 130px;
+    position: relative;
+    z-index: 10;
+    color: white;
+    max-width: 50vw;
+    margin: auto;
+    text-align: center;
+
+
+}
+
+.heading> :nth-child(1) {
+    font-size: 50px;
+
+}
+
+.heading> :nth-child(2) {
+    font-size: 20px;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.heading> :nth-child(3) {
+    font-size: 20px;
+}
+
+.heading-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+
+}
+
+.heading input {
+    /* padding: 10px; */
+    color: white;
+    padding: 7px 101px 8px 14px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+
+.heading .btn-red {
+    padding: 6px 15px;
+    font-weight: 550;
+    font-size: 18px;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(235, 31, 31);
+    border: 0.5px solid black;
+}
+
+.separation {
+    height: 7px;
+    background-color: gray;
+    position: relative;
+    z-index: 20;
+
+}
+
+section {
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    gap: 10px;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.secText {
+    max-width: 40vw;
+    /* background: red; */
+    /* text-align: center; */
+
+}
+
+.secMedia {
+    display: flex;
+    position: relative;
+
+
+
+}
+
+.secMedia img {
+    position: relative;
+    z-index: 10;
+
+
+}
+
+.secMedia video {
+    position: absolute;
+    right: 62px;
+    top: 70px;
+
+
+}
+
+.secText :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.secText :nth-child(2) {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    nav {
+        max-width: 90vw;
+    }
+
+    .heading {
+        padding-top: 100px;
+    }
+
+    .heading-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .heading> :nth-child(1) {
+        font-size: 40px;
+
+    }
+
+    .heading> :nth-child(2) {
+        font-size: 18px;
+
+    }
+
+    .heading> :nth-child(3) {
+        font-size: 17px;
+    }
+
+
+    section {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+
+
+
+
+}
