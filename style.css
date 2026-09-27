@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -13,8 +16,9 @@ body {
     background-size: max(1000px, 100vw);
     background-repeat: no-repeat;
     height: 600px;
-    /* width: 100%; */
+    /* max-width: 100%; */
     position: relative;
+    
 
 }
 
@@ -34,8 +38,6 @@ nav {
     margin: auto;
     padding-top: 25px;
 
-
-
 }
 
 .logo {
@@ -50,9 +52,10 @@ nav {
     z-index: 10;
     display: flex;
     gap: 10px;
-
-
+    
 }
+
+
 
 .langBtn {
     padding: 0 8px;
@@ -60,7 +63,7 @@ nav {
     border-radius: 4px;
     background-color: rgba(248, 243, 243, 0.219);
     border: 0.5px solid black;
-
+    cursor: pointer;
 }
 
 
@@ -71,9 +74,11 @@ nav {
     background-color: rgb(235, 31, 31);
     border: 0.5px solid black;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .heading {
+    
     padding-top: 130px;
     position: relative;
     z-index: 10;
@@ -127,6 +132,7 @@ nav {
     border-radius: 8px;
     background-color: rgb(235, 31, 31);
     border: 0.5px solid black;
+    cursor: pointer;
 }
 
 .separation {
@@ -134,6 +140,7 @@ nav {
     background-color: gray;
     position: relative;
     z-index: 20;
+    margin: 10px 0;
 
 }
 
@@ -159,24 +166,17 @@ section {
 .secMedia {
     display: flex;
     position: relative;
-
-
-
 }
 
 .secMedia img {
     position: relative;
     z-index: 10;
-
-
 }
 
 .secMedia video {
     position: absolute;
     right: 62px;
     top: 70px;
-
-
 }
 
 .secText :nth-child(1) {
@@ -187,6 +187,85 @@ section {
 .secText :nth-child(2) {
     font-size: 24px;
 }
+
+/* FAQ Section  */
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.faqBox:hover{
+    background-color: #414141;
+    color: white;
+}
+.faqBox{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    background-color: #2d2d2d;
+    padding: 15px 34px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.faqBox span{
+    align-items: center;
+    width: 60vw;
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+.faqbox img{
+    right: 0;
+}
+
+/* Footer Section  */
+
+footer{
+    color: white;
+     max-width: 60vw;
+    margin: auto;
+    padding-bottom: 20px;
+    
+    
+}
+
+.question{
+    font-size: 20px;
+    padding: 8px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+   
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.footer-item a{
+    color: aliceblue;
+    font-size: 18px;
+    
+}
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
 
@@ -232,9 +311,28 @@ section {
     .secImg video {
         width: 305px;
     }
+}
+
+/* FAQ  */
+ 
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
 
 
+.footer a {
+    font-size: 14px;
+    color: white;
+}
 
-
-
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
 }

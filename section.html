@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        section {
+            display: flex;
+            max-width: 80vw;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            gap: 10px;
+        }
+
+        .secText {
+            max-width: 40vw;
+            background: red;
+            text-align: center;
+
+        }
+
+        .secMedia {
+            display: flex;
+            position: relative;
+            /* max-width: 40vw; */
+
+
+        }
+
+        .secMedia img {
+            position: relative;
+            z-index: 10;
+            
+
+        }
+
+        .secMedia video {
+            position: absolute;
+            right: 62px;
+            top: 70px;
+        }
+
+        @media screen and (max-width: 1300px) {
+            
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="secText">
+            <h1>Enjoy on your TV</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="secMedia">
+            <img src="Assets/images/tv.png" width="450px">
+            <video class="secVid" src="Assets/videos/video1.m4v" autoplay loop muted width="330"></video>
+        </div>
+    </section>
+<br><br><br>
+    <section>
+        <div class="secMedia">
+            <img src="Assets/images/image1.jpg" width="500px">
+        </div>
+        <div class="secText">
+            <h1>Download your shows to watch offline</h1>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+    </section>
+</body>
+
+</html>
